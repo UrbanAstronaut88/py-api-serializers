@@ -10,7 +10,7 @@ from cinema.views import (MovieViewSet,
 router = DefaultRouter()
 router.register("movies", MovieViewSet, basename="movie")
 router.register("genres", GenreViewSet, basename="genre")
-router.register(r"actors", ActorViewSet, basename="actor"),
+router.register(r"actors", ActorViewSet, basename="actor")
 router.register(r"movie_sessions",
                 MovieSessionViewSet,
                 basename="movie_session"
